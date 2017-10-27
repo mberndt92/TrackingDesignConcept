@@ -12,6 +12,12 @@
 		717E98B51FA33EB1001DA1AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717E98B31FA33EB1001DA1AA /* Main.storyboard */; };
 		717E98B71FA33EB1001DA1AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717E98B61FA33EB1001DA1AA /* Assets.xcassets */; };
 		717E98BA1FA33EB1001DA1AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717E98B81FA33EB1001DA1AA /* LaunchScreen.storyboard */; };
+		7194DDA41FA3743800C74101 /* ButtonClickedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DD9F1FA3743800C74101 /* ButtonClickedEvent.swift */; };
+		7194DDA51FA3743800C74101 /* PrintToConsoleTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDA01FA3743800C74101 /* PrintToConsoleTracker.swift */; };
+		7194DDA61FA3743800C74101 /* ScreamyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDA31FA3743800C74101 /* ScreamyTracker.swift */; };
+		7194DDA81FA3745500C74101 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDA71FA3745500C74101 /* Tracker.swift */; };
+		7194DDAA1FA3745800C74101 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDA91FA3745800C74101 /* TrackingManager.swift */; };
+		7194DDAC1FA3750F00C74101 /* ScreamyButtonClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDAB1FA3750F00C74101 /* ScreamyButtonClick.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		717E98B61FA33EB1001DA1AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		717E98B91FA33EB1001DA1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		717E98BB1FA33EB1001DA1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7194DD9F1FA3743800C74101 /* ButtonClickedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonClickedEvent.swift; sourceTree = "<group>"; };
+		7194DDA01FA3743800C74101 /* PrintToConsoleTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintToConsoleTracker.swift; sourceTree = "<group>"; };
+		7194DDA31FA3743800C74101 /* ScreamyTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreamyTracker.swift; sourceTree = "<group>"; };
+		7194DDA71FA3745500C74101 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		7194DDA91FA3745800C74101 /* TrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingManager.swift; sourceTree = "<group>"; };
+		7194DDAB1FA3750F00C74101 /* ScreamyButtonClick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreamyButtonClick.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		717E98AE1FA33EB1001DA1AA /* TrackingDesignProject */ = {
 			isa = PBXGroup;
 			children = (
+				7194DD9C1FA3743800C74101 /* Tracker */,
 				717E98AF1FA33EB1001DA1AA /* AppDelegate.swift */,
 				717E98B11FA33EB1001DA1AA /* ViewController.swift */,
 				717E98B31FA33EB1001DA1AA /* Main.storyboard */,
@@ -62,6 +75,51 @@
 				717E98BB1FA33EB1001DA1AA /* Info.plist */,
 			);
 			path = TrackingDesignProject;
+			sourceTree = "<group>";
+		};
+		7194DD9C1FA3743800C74101 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				7194DDA91FA3745800C74101 /* TrackingManager.swift */,
+				7194DDA71FA3745500C74101 /* Tracker.swift */,
+				7194DD9D1FA3743800C74101 /* PrintToConsoleTracker */,
+				7194DDA11FA3743800C74101 /* ScreamyTracker */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		7194DD9D1FA3743800C74101 /* PrintToConsoleTracker */ = {
+			isa = PBXGroup;
+			children = (
+				7194DD9E1FA3743800C74101 /* Events */,
+				7194DDA01FA3743800C74101 /* PrintToConsoleTracker.swift */,
+			);
+			path = PrintToConsoleTracker;
+			sourceTree = "<group>";
+		};
+		7194DD9E1FA3743800C74101 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				7194DD9F1FA3743800C74101 /* ButtonClickedEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		7194DDA11FA3743800C74101 /* ScreamyTracker */ = {
+			isa = PBXGroup;
+			children = (
+				7194DDA21FA3743800C74101 /* Events */,
+				7194DDA31FA3743800C74101 /* ScreamyTracker.swift */,
+			);
+			path = ScreamyTracker;
+			sourceTree = "<group>";
+		};
+		7194DDA21FA3743800C74101 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				7194DDAB1FA3750F00C74101 /* ScreamyButtonClick.swift */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194DDA81FA3745500C74101 /* Tracker.swift in Sources */,
+				7194DDAC1FA3750F00C74101 /* ScreamyButtonClick.swift in Sources */,
+				7194DDA41FA3743800C74101 /* ButtonClickedEvent.swift in Sources */,
+				7194DDAA1FA3745800C74101 /* TrackingManager.swift in Sources */,
+				7194DDA51FA3743800C74101 /* PrintToConsoleTracker.swift in Sources */,
+				7194DDA61FA3743800C74101 /* ScreamyTracker.swift in Sources */,
 				717E98B21FA33EB1001DA1AA /* ViewController.swift in Sources */,
 				717E98B01FA33EB1001DA1AA /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +368,7 @@
 				717E98C01FA33EB1001DA1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

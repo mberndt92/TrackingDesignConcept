@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func blueberryButtonClicked(_ sender: Any) {
+        TrackingManager.trackEvent(event: ScreamyButtonClick(buttonName: "Blueberry", index: 0, isColoredGreen: false))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func bananaButtonClicked(_ sender: Any) {
+        TrackingManager.trackEvent(event: ButtonClickedEvent(buttonName: "Banana", index: 1, isColoredGreen: false))
     }
-
+    
+    @IBAction func raspberryButtonClicked(_ sender: Any) {
+        TrackingManager.trackEvent(event: ScreamyButtonClick(buttonName: "Raspberry", index: 2, isColoredGreen: false))
+    }
+    
+    @IBAction func cherryButtonClicked(_ sender: Any) {
+        TrackingManager.trackEvent(event: ButtonClickedEvent(buttonName: "Cherry", index: 3, isColoredGreen: false))
+    }
+    
+    @IBAction func pearButtonClicked(_ sender: Any) {
+        TrackingManager.trackEvent(event: ScreamyButtonClick(buttonName: "Pear", index: 4, isColoredGreen: true))
+    }
+    
+    @IBAction func appleButtonClicked(_ sender: Any) {
+        TrackingManager.trackEvent(event: ButtonClickedEvent(buttonName: "Apple", index: 5, isColoredGreen: true))
+    }
 
 }
 
