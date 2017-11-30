@@ -8,8 +8,8 @@
 
 class ButtonClickedEvent: Event {
     
-    //Event protocol
-    static var name: String = Events.ButtonClickEvent.rawValue
+    //MARK: Event protocol
+    static var name: String = "ButtonClickEvent"
     
     func trackingData() -> Dictionary<String, Any> {
         return [
@@ -20,7 +20,7 @@ class ButtonClickedEvent: Event {
         ]
     }
     
-    //Custom Info
+    //MARK: Custom Info
     let buttonName: String
     let index: Int
     let isColoredGreen: Bool
@@ -31,7 +31,7 @@ class ButtonClickedEvent: Event {
         self.isColoredGreen = isColoredGreen
     }
     
-    //Demo purpose
+    //MARK: Demo purpose
     func printToConsole() {
         print("EventName: \(ButtonClickedEvent.self)")
         print("ButtonName: \(buttonName)")

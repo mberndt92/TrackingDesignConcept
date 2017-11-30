@@ -7,6 +7,7 @@
 //
 
 class PrintToConsoleTracker: Tracker {
+    //MARK: Tracker Protocol
     var supportedEvents: [String] = [ButtonClickedEvent.name]
     
     func track(event: Event) {

@@ -19,9 +19,7 @@ protocol Tracker {
 }
 
 extension Tracker {
-    
     func canTrack(event: Event) -> Bool {
         return supportedEvents.contains(type(of: event).name)
     }
-    
 }

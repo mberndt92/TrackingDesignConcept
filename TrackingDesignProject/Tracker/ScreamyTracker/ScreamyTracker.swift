@@ -7,6 +7,7 @@
 //
 
 class ScreamyTracker: Tracker {
+    //MARK: Tracker Protocol
     var supportedEvents: [String] = [ScreamyButtonClick.name]
     
     func track(event: Event) {

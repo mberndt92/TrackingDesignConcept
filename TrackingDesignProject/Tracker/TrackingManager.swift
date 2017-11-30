@@ -6,12 +6,6 @@
 //  Copyright © 2017 mb. All rights reserved.
 //
 
-
-enum Events: String {
-    case ButtonClickEvent = "ButtonClickEvent"
-    case ScreamyClickEvent = "ScreanyClickEvent"
-}
-
 class TrackingManager {
     static var trackers: [Tracker] = [PrintToConsoleTracker(), ScreamyTracker()]
     

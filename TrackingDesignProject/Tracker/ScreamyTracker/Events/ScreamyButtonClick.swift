@@ -8,8 +8,8 @@
 
 class ScreamyButtonClick: Event {
     
-    //Protocol stuff.
-    static var name: String = Events.ScreamyClickEvent.rawValue
+    //MARK: Protocol stuff.
+    static var name: String = "ScreamyClickEvent"
     
     func trackingData() -> Dictionary<String, Any> {
         return [
@@ -20,7 +20,7 @@ class ScreamyButtonClick: Event {
         ]
     }
     
-    //Custom Info
+    //MARK: Custom Info
     let buttonName: String
     let index: Int
     let isColoredGreen: Bool
@@ -31,7 +31,7 @@ class ScreamyButtonClick: Event {
         self.isColoredGreen = isColoredGreen
     }
     
-    //Demo purpose
+    //MARK: Demo purpose
     func printToConsole() {
         print("EVENTNAME: \(ButtonClickedEvent.self)")
         print("BUTTONNAME: \(buttonName)")
